@@ -1,0 +1,325 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    /* text-align: center; */
+    background: powderblue;
+    box-sizing: border-box;
+}
+
+/* @media (min-width: 1200px)  */
+.container {
+
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+    margin-top: 10%;
+    width: 75%;
+
+}
+
+.row {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+}
+
+.col-md-2 {
+    position: relative;
+    /* text-transform: uppercase; */
+    font-size: 14px;
+    padding: 16px 10px;
+    margin: 0;
+    /* width: 150px; */
+    overflow: hidden;
+    background: yellow;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    /* 
+    
+    padding: 16px 10px;
+    background: #fff;
+    border: 1px solid rgba(255,255,255,1);
+    border-width: 1px 0;
+    border-radius: 0; */
+    /* border: 1px solid black; */
+    /* background-color: white; */
+}
+
+.searchbox {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 16px 10px;
+    margin: 0;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 25%;
+    background: pink;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+}
+table{
+    background: yellow;
+    color: teal;
+    border: 2px solid black;
+}
+.table {
+    /* width: 100%; */
+    /* max-width: 100%; */
+    margin-bottom: 20px;
+}
+.Liquid{
+    border: none;
+    background-color:powderblue;
+}
+.col-md-3 {
+    /* border: 1px solid black; */
+}
+
+#ramevent {
+    padding: 11px;
+}
+
+#ramevent1 {
+    padding-top: 1px;
+    padding-left: 11px;
+}
+
+/* #ramlist{
+        display: none;
+    } */
+
+#ramname {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    /* display: inline-block; */
+    cursor: pointer;
+    margin: -16px;
+    padding: 16px;
+    width: 95%;
+    left: 0%;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#helpinputRAM {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1.4px solid #c2c2c2;
+    border-radius: 1.5px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+.inputRAM {
+    color: initial;
+    letter-spacing: normal;
+    cursor: pointer;
+}
+
+#upitag {
+    padding: 1px;
+}
+
+#span1 {
+    /* padding-left: 180px; */
+}
+
+.rangeRAM {
+    text-align: left;
+    font-size: 14px;
+    padding-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#rambutton {
+    background-color: transparent;
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    /* background-color: transparent; */
+}
+
+#dd11 {
+    /* border: 1px solid black; */
+    padding-left: 0px;
+}
+
+#dd21 {
+    /* border: 1px solid black; */
+    padding-left: 0px;
+}
+
+#dd31 {
+    /* border: 1px solid black; */
+    padding-left: 0px;
+}
+
+#dd41 {
+    /* border: 1px solid black; */
+    padding-left: 0px;
+}
+
+/* #ddi11{
+
+  } */
+.headingfiler {
+    text-align: left;
+}
+
+#brandbutton {
+    background-color: transparent;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* background-color: transparent; */
+}
+
+#clearallram {
+    vertical-align: bottom;
+    cursor: pointer;
+    padding: 1px 0;
+    text-align: left;
+    /* margin-left:-2px;  */
+}
+
+#crossclearall {
+    display: inline-block;
+    height: 20px;
+    width: 14px;
+    padding: 0px 0;
+    text-align: center;
+    /* color: #878787; */
+    vertical-align: middle;
+    line-height: 1.4;
+    cursor: pointer;
+    margin-left: 11px;
+    background-color: springgreen;
+}
+
+#textclearall {
+    display: inline-block;
+    font-size: 15 px;
+    color: #878787;
+    margin-left: 11px;
+
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    /* display: inline-block; */
+    text-align: start;
+    /* -webkit-appearance: textfield; */
+    background-color: white;
+    /* -webkit-rtl-ordering: logical; */
+    cursor: text;
+    margin: 0em;
+    font: 400 11px system-ui;
+    /* padding: 1px; */
+    padding: 16px 10px 16px 15px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+#files{
+    text-align: right;
+}
+#fS{
+    text-align: left;
+}
+#XLS,#PDF{
+    cursor: pointer;
+    font-size: -webkit-xxx-large;
+}
+.closebox{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 50px;
+    /* padding: 16px 10px; */
+    margin: 0;
+    /* width: 150px; */
+    overflow: hidden;
+    border-radius: 25%;
+    background: pink;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+}
+.col-sm-7 {
+    width: 99%;
+    display: inline-block;
+    height: auto;
+    font-size: 14px;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+
+    padding: 16px 10px 16px 15px;
+    /* float: left; */
+    outline: 0;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid black;
+    /* background-color: white; */
+}
+
+.c1 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 16px 10px;
+    margin: 0;
+    width: 150px;
+    overflow: hidden;
+    background: #3498db;
+    color: #fff;
+    border: 1px solid black;
+    /* background-color: white; */
+}
+
+.c2 {
+
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 16px 10px;
+    margin: 0;
+    width: 150px;
+    overflow: hidden;
+    background: #59cdb5;
+    color: #fff;
+    border: 1px solid black;
+
+    /* background-color: white; */
+}

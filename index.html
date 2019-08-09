@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+    <script src="./fontawesome/js/fontawesome.min.js"></script> -->
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/16f1a6d3ad.js"></script>
+    <!-- <script lang="javascript" src="https://raw.githubusercontent.com/SheetJS/js-xlsx/master/dist/xlsx.full.min.js"></script> -->
+    <script src="./XlXS.min.js"></script>
+    <script src="./FileSaver.min.js"></script>
+    <!-- <script lang="javascript" src="https://raw.githubusercontent.com/eligrey/FileSaver.js/master/dist/FileSaver.min.js"></script> -->
+    <link rel="stylesheet" href="custom.css">
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" id="isshowarrowandDropdown1">
+                Select NRL
+                <!-- <i class="fas fa-arrow-up "></i> -->
+
+                <i class="fas fa-chevron-up" id="ar11" style="display: none;"></i>
+                <i class="fas fa-chevron-down" id="ar12"></i>
+                <!-- <i class="fas fa-arrow-up "></i> -->
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-2" id="isshowarrowandDropdown2">
+                Select State
+                <i class="fas fa-chevron-up" id="ar21" style="display: none;"></i>
+                <i class="fas fa-chevron-down" id="ar22"></i>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-2" id="isshowarrowandDropdown3">
+                Select Lab
+                <i class="fas fa-chevron-up" id="ar31" style="display: none;"></i>
+                <i class="fas fa-chevron-down" id="ar32"></i>
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-2" id="isshowarrowandDropdown4">
+                Select Year
+                <i class="fas fa-chevron-up" id="ar41" style="display: none;"></i>
+                <i class="fas fa-chevron-down" id="ar42"></i>
+            </div>
+            <!-- <div class="col-sm-9"> -->
+            <!-- Type Location or Project/Society of Keyword  -->
+            <!-- </div> -->
+            <div class="col-md-1 searchbox" id="search">
+                SEARCH
+            </div>
+            <!-- <div class="col-sm-2 c2">
+         MAP SEARCH      
+        </div> -->
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="span1" style="display: none;"></div>
+                <div id="d1" style="display: none;">
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi11" value="off">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd11">
+                            <div class="rangeRAM" id="ddv11"> All NRL </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi12" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd12">
+                            <div class="rangeRAM" id="ddv12"> NIRT Chennai </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi13" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd13">
+                            <div class="rangeRAM" id="ddv13"> NITRD Delhi </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi14" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd14">
+                            <div class="rangeRAM" id="ddv14"> NTI BLR </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="span2" style="display: none;"></div>
+                <div id="d2" style="display: none;">
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi21" value="off">
+
+                        </div>
+                        <div class="col-sm-10 headingfiler" id="dd21">
+                            <div class="rangeRAM" id="ddv21"> All States </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi22" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd22">
+                            <div class="rangeRAM" id="ddv22"> Karnataka </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi23" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd23">
+                            <div class="rangeRAM" id="ddv23"> Maharashtra</div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi24" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd24">
+                            <div class="rangeRAM" id="ddv24"> Rajasthan </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="span3" style="display: none;"></div>
+                <div id="d3" style="display: none;">
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi31" value="off">
+
+                        </div>
+                        <div class="col-sm-10 headingfiler" id="dd31">
+                            <div class="rangeRAM" id="ddv31"> All Labs </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi32" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd32">
+                            <div class="rangeRAM" id="ddv32"> NTT Bangalore </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi33" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd33">
+                            <div class="rangeRAM" id="ddv33"> STDC Bangalore</div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi34" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd34">
+                            <div class="rangeRAM" id="ddv34"> KIMS Hubli </div>
+                        </div>
+                    </div>
+
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi35" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd35">
+                            <div class="rangeRAM" id="ddv35"> RIMS Raichur </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="span4" style="display: none;"></div>
+                <div id="d4" style="display: none;">
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi41" value="off">
+
+                        </div>
+                        <div class="col-sm-10 headingfiler" id="dd41">
+                            <div class="rangeRAM" id="ddv41"> All Years </div>
+                        </div>
+                    </div>
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi42" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd42">
+                            <div class="rangeRAM" id="ddv42"> 2018 </div>
+                        </div>
+                    </div>
+
+                    <div id="ramevent1" class="row">
+
+                        <div class="col-sm-2">
+                            <input type="checkbox" class="inputRAM" id="ddi43" value="on">
+
+                        </div>
+                        <div class=" col-sm-10 headingfiler" id="dd43">
+                            <div class="rangeRAM" id="ddv43"> 2019 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="showentry" style="display: none;">
+            Show
+            <select id="selent" name="selent" class="browser-default">
+                <option value="0" disabled selected name='selectentries'>10</option>
+                <option value="1" name='25'>25</option>
+                <option value="2" name='50'>50</option>
+                <option value="3" name='100'>100</option>
+            </select>
+            Entries
+        </div>
+        <div id="firstTable" style="display: none;">
+            <table class="table table-striped" id="FT">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        <div id="SecondTable" style="display: none;">
+            <div class="row">
+                <div class="col-md-2 Liquid">
+                    Liquid Culture
+                </div>
+                <div class="col-sm-8">
+                    <table class="table table-striped" id="ST">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-md-2 closebox" id="close">
+                    Close
+                </div>
+            </div>
+
+        </div>
+        <div id="files" style="display: none;">
+            <div id="fS">File Saved</div>
+            <i class="far fa-file-excel" id="XLS"></i>
+            &nbsp;
+            <i class="far fa-file-pdf" id="PDF"></i>
+        </div>
+        <script>
+            var XLS, PDF, FT, ST;
+            XLS = document.querySelector('#XLS');
+            PDF = document.querySelector('#PDF');
+            FT = document.querySelector('#FT');
+            ST = document.querySelector('#ST');
+            XLS.addEventListener('click', CreateandDownloadXLS);
+            PDF.addEventListener('click', CreateandDownloadPDF);
+            function CreateandDownloadPDF(){
+                window.print();
+            }
+            function CreateandDownloadXLS() {
+                console.log(firstTable);
+                console.log(SecondTable);
+                console.log(XLSX);
+                var WB = XLSX.utils.book_new();
+                WB.Props = {
+                    Tital: 'XLS Sheet',
+                    Subject: 'Test file',
+                    Author: "Jatin Anand",
+                    CreateDate: new Date(2019, 08, 09)
+                };
+                WB.SheetNames.push('Test Sheet');
+                var WSData = [
+                ];
+                for (var i = 0; i < FT.rows.length; i++) {
+                    var ObjCell = FT.rows.item(i).cells;
+                    console.log('OBJCELL : ',ObjCell);
+                    var L1=[];
+                    for (var j = 0; j < ObjCell.length; j++) {
+                        L1.push(ObjCell.item(j).innerHTML);
+                        // console.log('OBJCELL V : ',ObjCell.item(i).innerHTML);
+                        // info.innerHTML = info.innerHTML + ' ' + objCells.item(j).innerHTML;
+                    }
+                    WSData.push(L1);
+                }
+                console.log(WSData);
+                var WS = XLSX.utils.aoa_to_sheet(WSData);
+                WB.Sheets['Test Sheet'] = WS;
+                var Wbout = XLSX.write(WB, {
+                    bookType: 'xlsx',
+                    type: 'binary'
+                });
+
+                function s2ab(s) {
+                    var buf = new ArrayBuffer(s.length);
+                    var view = new Uint8Array(buf);
+                    for (var i = 0; i < s.length; i++) {
+                        view[i] = s.charCodeAt(i) & 0xFF;
+
+                    }
+                    return buf;
+                }
+                saveAs(new Blob([s2ab(Wbout)], {
+                    type: 'application/octet-stream'
+                }), 'test.xlsx');
+            }
+        </script>
+    </div>
+</body>
+
+</html>
